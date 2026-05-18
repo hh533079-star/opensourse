@@ -30,4 +30,4 @@ def docker_status():
         result = subprocess.check_output("docker ps", shell=True).decode()
         return {"containers": result}
     except:
-        return {"error": "Docker not running"}
+        return {"error": "Docker not running please try again later"}
